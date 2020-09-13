@@ -1,0 +1,304 @@
+body{ font-family: sans-serif; }
+.nav {
+  display: flex;
+  background: #008aff;
+  transition: 0.5s;
+}
+.nav a {
+  color: white;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.nav a:hover { background:#5c8db7;
+}
+/* больше 320px */
+@media (min-width: 320px) {
+.nav { justify-content: space-around;
+  flex-direction: column;
+  opacity: 0; }
+.nav a:hover {
+  background:#5c8db7;
+  color: white;
+  transition: 0.5s;}
+.nav:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.nav a{ flex-grow:1; /* растягиваться на всю ширину */
+  font-size: 12px; }
+.text__title {font-size: 14px; }
+.section {
+  top: 115px;
+  left: 25px;
+  position: absolute;
+  width: 50px;
+  height: 100vh;
+  display: block;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.menu-btn {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 1;
+  transition: 0.5s;
+}
+.menu-btn:hover {
+  transition: 0.5s;
+  opacity:1;
+  background-color: gray;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%; margin-top: -1px;
+  left: 50%; margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+  opacity: 1;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+}
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+}
+/* меньше 481px */
+@media (min-width: 481px) {
+.nav { justify-content: space-around;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;}
+.nav a:hover {
+  background:#5c8db7;
+  color: white;
+  transition: 0.5s;}
+.nav:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.nav a{ flex-grow:1; /* растягиваться на всю ширину */
+  font-size: 18px; }
+.text__title {font-size: 20px; }
+.section {
+  top: 115px;
+  left: 25px;
+  position: absolute;
+  width: 50px;
+  height: 100vh;
+  display: block;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.menu-btn {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 1;
+  transition: 0.5s;
+}
+.menu-btn:hover {
+  transition: 0.5s;
+  opacity: 1;
+  background-color: gray;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%; margin-top: -1px;
+  left: 50%; margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+  opacity: 1;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+}
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+}
+/* больше 641px */
+@media (min-width: 641px) {
+.nav { justify-content: space-around;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;
+}
+.nav a:hover {
+  background: #5c8db7;
+  color: white;
+  transition: 0.5s;}
+.nav:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.nav a{ flex-grow:1; /* растягиваться на всю ширину */
+  font-size: 28px; }
+.text__title {font-size: 30px; }
+.section {
+  position: absolute;
+  top: 115px;
+  left: 25px;
+  width: 50px;
+  height: 100vh;
+  display: block;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.menu-btn {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 1;
+  transition: 0.5s;
+}
+.menu-btn:hover {
+  transition: 0.5s;
+  opacity: 1;
+  background-color: gray;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%; margin-top: -1px;
+  left: 50%; margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+  opacity: 1;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+}
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+}
+/* меньше 961px */
+@media (min-width: 961px) {
+.nav { justify-content: space-around;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s; }
+.nav a:hover {
+  background: #5c8db7;
+  color: white;
+  transition: 0.5s;}
+.nav:hover {
+  opacity: 1;
+  transition: 0.5s;
+  }
+.nav a { flex-grow:1; /* растягиваться на всю ширину */
+  font-size: 40px; }
+.text__title {font-size: 42px; }
+.section {
+  position: absolute;
+  top: 115px;
+  left: 25px;
+  width: 50px;
+  height: 100vh;
+  display: block;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.menu-btn {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 1;
+  transition: 0.5s;
+}
+.menu-btn:hover {
+  transition: 0.5s;
+  opacity: 1;
+  background-color: gray;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%; margin-top: -1px;
+  left: 50%; margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+  opacity: 1;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+}
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+}
+/* больше 1025px */
+@media (min-width: 1024px) {
+.nav { justify-content: space-around;
+  flex-direction: row;
+  opacity: 1; }
+.nav a{ flex-grow:1; /* растягиваться на всю ширину */
+  font-size: 54px; }
+.text__title {font-size: 56px; }
+.menu-btn {opacity: 0; }
+.menu-btn:hover{opacity: 0;
+  cursor: default; }
+}
+/* больше 1281px */
+@media (min-width: 1281px) {
+.nav { justify-content: space-around;
+  flex-direction: row;
+  opacity: 1}
+
+.nav a{ flex-grow:1; /* растягиваться на всю ширину */
+  font-size: 62px; }
+.text__title {font-size: 64px; }
+.menu-btn {opacity: 0;}
+.menu-btn:hover{opacity: 0;
+  cursor: default; }
+}
